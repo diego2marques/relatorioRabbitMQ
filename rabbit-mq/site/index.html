@@ -1,143 +1,235 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
-      <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>MkLorum</title>
-    <link rel="stylesheet" href="css/theme.css" />
-    <link rel="stylesheet" href="css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
-    
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Home";
-        var mkdocs_page_input_path = "index.md";
-        var mkdocs_page_url = null;
-      </script>
-    
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> MkLorum
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
-    </li>
-    </ul>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="about/">About</a>
-                </li>
-              </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">MkLorum</a>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
         
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Home</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-                <h1 id="mklorum">MkLorum</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
-              
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>RabbitMQ</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">RabbitMQ</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="gettingStarted/" class="nav-link">Primeiros passos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="installing/" class="nav-link">Instalação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="referencias/" class="nav-link">Referências</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="gettingStarted/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
             </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
-  <hr/>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#o-que-e-o-rabbitmq" class="nav-link">O que é o RabbitMQ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#principais-caracteristicas" class="nav-link">Principais características</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#usos-comuns" class="nav-link">Usos comuns</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-          
+<h2 id="o-que-e-o-rabbitmq"><strong>O que é o RabbitMQ?</strong></h2>
+<p>O RabbitMQ é um software de mensageria open-source amplamente utilizado para enviar e receber mensagens entre sistemas distribuídos. Ele implementa o protocolo AMQP (Advanced Message Queuing Protocol) e é conhecido por sua confiabilidade, escalabilidade e flexibilidade.</p>
+<h2 id="principais-caracteristicas"><strong>Principais características</strong></h2>
+<ul>
+<li>
+<p><strong>Filas (Queues)</strong>: O RabbitMQ armazena as mensagens em filas, que podem ser consumidas por um ou mais consumidores. As filas garantem que as mensagens sejam entregues na ordem em que foram enviadas.</p>
+</li>
+<li>
+<p><strong>Produtores (Producers)</strong>: Os produtores são responsáveis por enviar mensagens para as filas. Eles publicam mensagens para uma troca (Exchange), que, por sua vez, roteia as mensagens para as filas apropriadas.</p>
+</li>
+<li>
+<p><strong>Consumidores (Consumers)</strong>: Os consumidores são responsáveis por receber as mensagens das filas e processá-las. Um consumidor pode ser qualquer aplicação ou serviço que esteja conectado ao RabbitMQ.</p>
+</li>
+<li>
+<p><strong>Trocas (Exchanges)</strong>: As trocas recebem mensagens dos produtores e determinam para qual fila ou filas essas mensagens devem ser roteadas. Existem diferentes tipos de trocas, como direct, fanout, topic e headers, cada uma com regras específicas de roteamento.</p>
+</li>
+<li>
+<p><strong>Bindings</strong>: Um binding é uma conexão entre uma troca e uma fila que define como as mensagens devem ser roteadas. As regras de binding determinam se uma mensagem deve ser entregue a uma fila específica.</p>
+</li>
+<li>
+<p><strong>Mensagens</strong>: As mensagens em RabbitMQ podem conter qualquer tipo de dado, como texto, JSON, XML, etc. Elas são enviadas pelo produtor e processadas pelo consumidor.</p>
+</li>
+</ul>
+<h2 id="usos-comuns"><strong>Usos comuns</strong></h2>
+<ul>
+<li>
+<p><strong>Desacoplamento de serviços interconectados</strong> </p>
+<p>Você tem um serviço backend que precisa enviar notificações para os usuários finais. Existem dois canais de notificação: e-mails e notificações push para o aplicativo móvel.</p>
+<p>O backend publica a notificação em duas filas, uma para cada canal. Programas que gerenciam e-mails e notificações push se inscrevem na fila de seu interesse e processam as notificações assim que elas chegam.</p>
+</li>
+<li>
+<p><strong>Chamada de Procedimento Remoto (RPC)</strong></p>
+<p>Você é proprietário de uma casa de shows. Os ingressos para os espetáculos são vendidos em vários sites e quiosques físicos. Os pedidos de todos os canais devem passar por um processo complexo para determinar se um cliente realmente obterá seus ingressos, dependendo da disponibilidade. O site ou quiosque espera receber uma resposta para o pedido no menor tempo possível.</p>
+<p>Os pedidos são publicados em uma fila no RabbitMQ com um ID de correlação. O chamador que enviou o pedido, então, se inscreve em outra fila e aguarda uma resposta com o mesmo ID de correlação.</p>
+<p>Para alcançar baixa latência, uma fila clássica é adequada aqui, mas isso vem com o custo de menor segurança — o chamador ainda pode tentar novamente. Se o pedido não puder ser perdido, você pode preferir usar uma combinação de confirmações e filas de quórum para garantir que uma mensagem esteja segura uma vez confirmada.</p>
+<p>Essa topologia permite que o processamento de pedidos seja serializado para atendê-los em ordem de chegada. Isso evita a necessidade de transações.</p>
+</li>
+<li>
+<p><strong>Streaming</strong></p>
+<p>Você administra uma plataforma de vídeos. Quando um usuário faz o upload de um novo vídeo, há várias tarefas a serem concluídas após o vídeo ser armazenado com segurança: realizar uma análise pós-upload, transcodificar cópias de qualidade inferior do vídeo, notificar outros usuários inscritos nas criações do autor, e assim por diante.</p>
+<p>O serviço de upload adiciona eventos de "Novo vídeo" a um stream do RabbitMQ. Várias aplicações backend podem se inscrever nesse stream e ler novos eventos independentemente umas das outras. Os usuários devem ser notificados imediatamente, mas a análise pós-upload pode esperar e ser executada uma vez por dia.</p>
+</li>
+<li>
+<p><strong>IoT</strong></p>
+<p>Você oferece serviços de entrega de pacotes em toda a galáxia. Você possui um enxame de drones espaciais que precisam relatar seu status regularmente para um servidor hospedado no exoplaneta Kepler-438 b. Infelizmente, a conectividade da rede não é muito boa...</p>
+<p>Cada drone espacial executa um nó RabbitMQ local independente que armazena temporariamente seus relatórios até que uma conexão com o RabbitMQ upstream seja possível.</p>
+<p>Quando os planetas estão alinhados, o RabbitMQ do drone envia todos os relatórios para o RabbitMQ upstream.</p>
+</li>
+</ul></div>
+            </div>
         </div>
-      </div>
 
-    </section>
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
 
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-    
-      <span><a href="about/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = ".";</script>
-    <script src="js/theme_extra.js"></script>
-    <script src="js/theme.js"></script>
-      <script src="search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
 
-</body>
+    </body>
 </html>
 
 <!--
 MkDocs version : 1.6.0
-Build Date UTC : 2024-08-21 18:01:13.289268+00:00
+Build Date UTC : 2024-08-21 22:26:00.263453+00:00
 -->
