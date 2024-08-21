@@ -1,0 +1,6 @@
+site_name: RabbitMQ
+nav:
+  - Home: index.md
+  - Primeiros passos: gettingStarted.md
+  - Instalação: installing.md
+  - Referências: referencias.md
